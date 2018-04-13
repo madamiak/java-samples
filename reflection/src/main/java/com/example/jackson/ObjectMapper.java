@@ -16,8 +16,11 @@ public class ObjectMapper {
                 // pobierz wartość klucza
                 // kawałek kodu: jsonObject.get("<nazwa klucza w JSONie>");
 
+                // pobierz typ pola
+                // kawałek kodu: type.<metoda do pobierania pola po nazwie - jako nazwa wpisz nazwę klucza>().getType()
+
                 // ustaw klucz we wcześniej utworzonym obiekcie
-                // kawałek kodu: type.getMethod("set<nazwa klucz w JSONie z pierwsza wielką literą")
+                // kawałek kodu: type.getMethod("set" + <nazwa klucza w JSONie z pierwsza wielką literą, <typ pola pobrany w linijce 20>)
 
                 // wywołaj metodę
                 // kawałek kodu method.invoke(<obiekt utworzony w linijce 10>, <wartość klucza>)
